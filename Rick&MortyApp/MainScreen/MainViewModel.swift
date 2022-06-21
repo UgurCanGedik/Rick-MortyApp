@@ -19,7 +19,6 @@ class MainViewModel {
     init() { }
     
     func getData(isNextPage: Bool) {
-        print("*********--\(isNextPage)--**********")
 
         if isNextPage {
             page += 1
