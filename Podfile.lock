@@ -1,0 +1,26 @@
+PODS:
+  - Apollo (0.51.2):
+    - Apollo/Core (= 0.51.2)
+  - Apollo/Core (0.51.2)
+  - Kingfisher (7.2.2)
+  - SnapKit (5.6.0)
+
+DEPENDENCIES:
+  - Apollo
+  - Kingfisher
+  - SnapKit (~> 5.6.0)
+
+SPEC REPOS:
+  trunk:
+    - Apollo
+    - Kingfisher
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Apollo: e5bc805c3f3556c18edc4eae4e2ea4723cea2318
+  Kingfisher: 184d4d1a8c36666e663caf8e08abe87898595c53
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+
+PODFILE CHECKSUM: 9d987303bcf082639e51fa06b0e19d61e7a711b3
+
+COCOAPODS: 1.11.3
