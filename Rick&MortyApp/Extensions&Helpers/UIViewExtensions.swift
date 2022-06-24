@@ -8,7 +8,7 @@
 import UIKit
 
 extension UIView {
-    
+
     func createShadow(_ color: UIColor = .black, shadowRadius: CGFloat, shadowOpacity: Float) {
 
         self.layer.shadowOffset = CGSize(width: 0, height: 2)

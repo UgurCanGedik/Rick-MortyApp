@@ -10,31 +10,31 @@ import SnapKit
 import Kingfisher
 
 class MainViewCell: UITableViewCell {
-    
+
     static let identifier: String = "MainViewCellIdentifier"
-    
+
     private lazy var backGroundView: UIView = UIView()
     private lazy var characterNameLabel: UILabel = UILabel()
     private lazy var characterIdLabel: UILabel = UILabel()
     private lazy var characterImageView: UIImageView = UIImageView()
     private lazy var characterLocationLabel: UILabel = UILabel()
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-    
+
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
+
         setLayouts()
         setUI()
     }
-        
+
     func setCell(charaterName: String,
                  characterId: String,
                  characterImageURL: String,
                  characterLocation: String) {
-        
+
         characterNameLabel.attributedText = NSMutableAttributedString().createAttributedString(
             String1: "Name: ",
             Font1: .Regular_16,
@@ -61,16 +61,16 @@ class MainViewCell: UITableViewCell {
                                        options: nil,
                                        completionHandler: nil)
     }
-    
+
     private func setUI(){
-        
+
         self.clipsToBounds = false
         self.selectionStyle = .none
-        
+
         backGroundView.backgroundColor = .white
         backGroundView.createBorder(cornerRadius: 10)
         backGroundView.createShadow(shadowRadius: 8, shadowOpacity: 0.1)
-        
+
         characterNameLabel.textAlignment = .left
         characterNameLabel.numberOfLines = 0
 
@@ -84,9 +84,9 @@ class MainViewCell: UITableViewCell {
         characterImageView.layer.masksToBounds = true
         characterImageView.contentMode = .scaleAspectFill
     }
-    
+
     private func setLayouts(){
-        
+
         self.backGroundView.addSubview(characterImageView)
         characterImageView.snp.makeConstraints { make in
             make.top.equalTo(backGroundView.snp.top)
@@ -94,7 +94,7 @@ class MainViewCell: UITableViewCell {
             make.leading.equalTo(backGroundView.snp.leading)
             make.height.equalTo((UIScreen.main.bounds.width - 48 ) / 1.9464)
         }
-        
+
         self.backGroundView.addSubview(characterIdLabel)
         characterIdLabel.snp.makeConstraints { make in
             make.trailing.equalTo(backGroundView.snp.trailing).offset(-17)
@@ -127,14 +127,14 @@ class MainViewCell: UITableViewCell {
             make.trailing.equalTo(self.snp.trailing).offset(-24)
         }
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError()
     }
-    
+
     override func prepareForReuse() {
         super.prepareForReuse()
-        
+
         characterNameLabel.text = nil
         characterIdLabel.text = nil
         characterImageView.image = nil

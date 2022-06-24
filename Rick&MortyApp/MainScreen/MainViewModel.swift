@@ -8,16 +8,16 @@
 import Foundation
 
 class MainViewModel {
-    
+
     static let shared = MainViewModel()
-    
+
     private var page: Int = 1
     public var characterFilter: Observable<Filters?> = Observable(.allCharacters)
     public var characterData: Observable<[CharacterQuery.Data.Character.Result]> = Observable([])
     public var errorOccured: (()->())?
-    
+
     init() { }
-    
+
     func getData(isNextPage: Bool) {
 
         if isNextPage {
@@ -42,12 +42,13 @@ class MainViewModel {
             }
         }
     }
-    
+
     private func deleteValues(){
+
         page = 1
         self.characterData.value = []
     }
-    
+
     func getRowCount() -> Int {
         return characterData.value.count
     }

@@ -8,11 +8,11 @@
 import Foundation
 
 enum Filters: CustomStringConvertible {
-    
+
     case ricks
     case mortys
     case allCharacters
-    
+
     var description : String {
         switch self {
         case .ricks:

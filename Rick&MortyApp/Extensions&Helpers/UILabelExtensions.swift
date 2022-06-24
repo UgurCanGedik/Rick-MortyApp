@@ -8,9 +8,9 @@
 import UIKit
 
 extension UILabel {
-    
+
     func setLabel(_ textColor: UIColor = .black, font: UIFont, text: String, aligment: NSTextAlignment) {
-        
+
         self.backgroundColor = .clear
         self.textColor = textColor
         self.textAlignment = aligment

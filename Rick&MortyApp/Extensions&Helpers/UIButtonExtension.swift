@@ -8,9 +8,9 @@
 import UIKit
 
 extension UIButton {
-    
+
     func setButton(tag: Int) {
-        
+
         self.backgroundColor = .clear
         self.tag = tag
         self.layer.zPosition = 2
