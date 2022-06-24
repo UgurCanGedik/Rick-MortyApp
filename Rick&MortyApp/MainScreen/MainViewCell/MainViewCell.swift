@@ -69,7 +69,7 @@ class MainViewCell: UITableViewCell {
 
         backGroundView.backgroundColor = .white
         backGroundView.createBorder(cornerRadius: 10)
-        backGroundView.createShadow(shadowRadius: 8, shadowOpacity: 0.1)
+        backGroundView.createShadow(shadowRadius: 3, shadowOpacity: 0.1)
 
         characterNameLabel.textAlignment = .left
         characterNameLabel.numberOfLines = 0
