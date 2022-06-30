@@ -25,8 +25,7 @@ class MainViewModel {
         } else {
             deleteValues()
         }
-
-        Network.shared.apollo.fetch(query: CharacterQuery(page: page, charaterFilter: characterFilter.value ?? .allCharacters)) { [weak self] result in
+        Network.shared.apollo.fetch(query: CharacterQuery(page: page, name: characterFilter.value?.description ?? Filters.allCharacters.description)) { [weak self] result in
             guard let self = self
             else { return }
 

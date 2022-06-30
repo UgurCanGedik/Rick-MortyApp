@@ -16,10 +16,8 @@
 		6FF7C1252860534100DA4CB8 /* Rick_MortyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF7C1242860534100DA4CB8 /* Rick_MortyAppTests.swift */; };
 		6FF7C12F2860534100DA4CB8 /* Rick_MortyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF7C12E2860534100DA4CB8 /* Rick_MortyAppUITests.swift */; };
 		6FF7C1312860534100DA4CB8 /* Rick_MortyAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF7C1302860534100DA4CB8 /* Rick_MortyAppUITestsLaunchTests.swift */; };
-		6FF7C144286064E100DA4CB8 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 6FF7C143286064E100DA4CB8 /* schema.json */; };
 		6FF7C148286077E900DA4CB8 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF7C147286077E900DA4CB8 /* Network.swift */; };
 		6FF7C14A2860788200DA4CB8 /* LaunchList.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 6FF7C1492860788200DA4CB8 /* LaunchList.graphql */; };
-		6FF7C14D28607AEB00DA4CB8 /* CharacterQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF7C14C28607AEB00DA4CB8 /* CharacterQuery.swift */; };
 		6FF7C15028607D7C00DA4CB8 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF7C14F28607D7C00DA4CB8 /* Enums.swift */; };
 		6FF7C1542860811F00DA4CB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF7C1532860811F00DA4CB8 /* SceneDelegate.swift */; };
 		6FF7C1572860AF0F00DA4CB8 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF7C1562860AF0F00DA4CB8 /* MainViewModel.swift */; };
@@ -34,6 +32,8 @@
 		6FF7C1722861EFBC00DA4CB8 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF7C1712861EFBC00DA4CB8 /* UILabelExtensions.swift */; };
 		6FF7C1742861F22300DA4CB8 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF7C1732861F22300DA4CB8 /* UIButtonExtension.swift */; };
 		6FF7C1782865B74600DA4CB8 /* Dictionaries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF7C1772865B74600DA4CB8 /* Dictionaries.swift */; };
+		6FF7C180286E49DE00DA4CB8 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 6FF7C17F286E49DE00DA4CB8 /* schema.json */; };
+		6FF7C189286E4E3D00DA4CB8 /* CharacterQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF7C188286E4E3D00DA4CB8 /* CharacterQuery.swift */; };
 		A19041B55259635CD07B789D /* Pods_Rick_MortyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D593388230EEA3CFBF8F8674 /* Pods_Rick_MortyAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,10 +69,8 @@
 		6FF7C12A2860534100DA4CB8 /* Rick&MortyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rick&MortyAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF7C12E2860534100DA4CB8 /* Rick_MortyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rick_MortyAppUITests.swift; sourceTree = "<group>"; };
 		6FF7C1302860534100DA4CB8 /* Rick_MortyAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rick_MortyAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		6FF7C143286064E100DA4CB8 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		6FF7C147286077E900DA4CB8 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		6FF7C1492860788200DA4CB8 /* LaunchList.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LaunchList.graphql; sourceTree = "<group>"; };
-		6FF7C14C28607AEB00DA4CB8 /* CharacterQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterQuery.swift; sourceTree = "<group>"; };
 		6FF7C14F28607D7C00DA4CB8 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		6FF7C1532860811F00DA4CB8 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6FF7C1562860AF0F00DA4CB8 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
@@ -87,6 +85,8 @@
 		6FF7C1712861EFBC00DA4CB8 /* UILabelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
 		6FF7C1732861F22300DA4CB8 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		6FF7C1772865B74600DA4CB8 /* Dictionaries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionaries.swift; sourceTree = "<group>"; };
+		6FF7C17F286E49DE00DA4CB8 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		6FF7C188286E4E3D00DA4CB8 /* CharacterQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CharacterQuery.swift; path = "Rick&MortyApp/CharacterQuery.swift"; sourceTree = SOURCE_ROOT; };
 		742EABC779ADBBA571696354 /* Pods-Rick&MortyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rick&MortyApp.release.xcconfig"; path = "Target Support Files/Pods-Rick&MortyApp/Pods-Rick&MortyApp.release.xcconfig"; sourceTree = "<group>"; };
 		747D2946702D6CC35433C0B5 /* Pods-Rick&MortyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rick&MortyApp.debug.xcconfig"; path = "Target Support Files/Pods-Rick&MortyApp/Pods-Rick&MortyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		7D1D760BA570FEBB6C9CF088 /* Pods-Rick&MortyApp-Rick&MortyAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rick&MortyApp-Rick&MortyAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-Rick&MortyApp-Rick&MortyAppUITests/Pods-Rick&MortyApp-Rick&MortyAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +161,7 @@
 		6FF7C10C2860534000DA4CB8 /* Rick&MortyApp */ = {
 			isa = PBXGroup;
 			children = (
+				6FF7C17F286E49DE00DA4CB8 /* schema.json */,
 				6FF7C1552860AEE400DA4CB8 /* MainScreen */,
 				6FF7C15F2860D0EA00DA4CB8 /* FilterScreen */,
 				6FF7C146286077C700DA4CB8 /* Network */,
@@ -192,9 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				6FF7C147286077E900DA4CB8 /* Network.swift */,
-				6FF7C14C28607AEB00DA4CB8 /* CharacterQuery.swift */,
+				6FF7C188286E4E3D00DA4CB8 /* CharacterQuery.swift */,
 				6FF7C1492860788200DA4CB8 /* LaunchList.graphql */,
-				6FF7C143286064E100DA4CB8 /* schema.json */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -278,6 +278,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6FF7C1342860534100DA4CB8 /* Build configuration list for PBXNativeTarget "Rick&MortyApp" */;
 			buildPhases = (
+				6FF7C181286E4A2F00DA4CB8 /* ShellScript */,
 				FCB9C0DA2BADB366BEE6FAE5 /* [CP] Check Pods Manifest.lock */,
 				6FF7C1062860534000DA4CB8 /* Sources */,
 				6FF7C1072860534000DA4CB8 /* Frameworks */,
@@ -380,8 +381,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FF7C180286E49DE00DA4CB8 /* schema.json in Resources */,
 				6FF7C16E2861DA2C00DA4CB8 /* Roboto-Regular.ttf in Resources */,
-				6FF7C144286064E100DA4CB8 /* schema.json in Resources */,
 				6FF7C11A2860534100DA4CB8 /* LaunchScreen.storyboard in Resources */,
 				6FF7C16D2861DA2900DA4CB8 /* Roboto-Bold.ttf in Resources */,
 				6FF7C1172860534100DA4CB8 /* Assets.xcassets in Resources */,
@@ -467,6 +468,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6FF7C181286E4A2F00DA4CB8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\nSCRIPT_PATH=\"${PODS_ROOT}/Apollo/scripts\"\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/LaunchList.graphql --localSchemaFile=\"schema.json\" CharacterQuery.swift\n\n";
+		};
 		9DDC71A9B5991155C4A1626C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -515,6 +533,7 @@
 			files = (
 				6FF7C1722861EFBC00DA4CB8 /* UILabelExtensions.swift in Sources */,
 				6FF7C15C2860B3CA00DA4CB8 /* MainViewCell.swift in Sources */,
+				6FF7C189286E4E3D00DA4CB8 /* CharacterQuery.swift in Sources */,
 				6FF7C1702861EDC700DA4CB8 /* UIViewExtensions.swift in Sources */,
 				6FF7C15A2860AF6C00DA4CB8 /* Observable.swift in Sources */,
 				6FF7C16C2861D8EF00DA4CB8 /* UIFontExtensions.swift in Sources */,
@@ -525,7 +544,6 @@
 				6FF7C1672861CAFD00DA4CB8 /* FilterViewController.swift in Sources */,
 				6FF7C10E2860534000DA4CB8 /* AppDelegate.swift in Sources */,
 				6FF7C1782865B74600DA4CB8 /* Dictionaries.swift in Sources */,
-				6FF7C14D28607AEB00DA4CB8 /* CharacterQuery.swift in Sources */,
 				6FF7C148286077E900DA4CB8 /* Network.swift in Sources */,
 				6FF7C15028607D7C00DA4CB8 /* Enums.swift in Sources */,
 				6FF7C1542860811F00DA4CB8 /* SceneDelegate.swift in Sources */,

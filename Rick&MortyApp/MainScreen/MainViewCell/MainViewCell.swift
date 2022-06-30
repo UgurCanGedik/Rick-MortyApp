@@ -18,6 +18,7 @@ class MainViewCell: UITableViewCell {
     private lazy var characterIdLabel: UILabel = UILabel()
     private lazy var characterImageView: UIImageView = UIImageView()
     private lazy var characterLocationLabel: UILabel = UILabel()
+    private lazy var characterGenderLabel: UILabel = UILabel()
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,7 +34,8 @@ class MainViewCell: UITableViewCell {
     func setCell(charaterName: String,
                  characterId: String,
                  characterImageURL: String,
-                 characterLocation: String) {
+                 characterLocation: String,
+                 characterGender: String) {
 
         characterNameLabel.attributedText = NSMutableAttributedString().createAttributedString(
             String1: "Name: ",
@@ -56,6 +58,13 @@ class MainViewCell: UITableViewCell {
             String2: characterLocation,
             Font2: .Regular_16,
             Color2: .lightGray)
+        characterGenderLabel.attributedText = NSMutableAttributedString().createAttributedString(
+            String1: "Gender: ",
+            Font1: .Regular_16,
+            Color1: .black,
+            String2: characterGender,
+            Font2: .Regular_16,
+            Color2: .lightGray)
         characterImageView.kf.setImage(with: URL(string: characterImageURL),
                                        placeholder: UIImage(named: "DefaultImage"),
                                        options: nil,
@@ -76,6 +85,9 @@ class MainViewCell: UITableViewCell {
 
         characterLocationLabel.textAlignment = .left
         characterNameLabel.numberOfLines = 0
+        
+        characterGenderLabel.textAlignment = .left
+        characterGenderLabel.numberOfLines = 0
 
         characterIdLabel.textAlignment = .right
 
@@ -116,6 +128,14 @@ class MainViewCell: UITableViewCell {
             make.leading.equalTo(characterNameLabel.snp.leading)
             make.trailing.equalTo(characterNameLabel.snp.trailing)
             make.top.equalTo(characterNameLabel.snp.bottom).offset(8)
+//            make.bottom.equalTo(backGroundView.snp.bottom).offset(-40)
+        }
+        
+        self.backGroundView.addSubview(characterGenderLabel)
+        characterGenderLabel.snp.makeConstraints { make in
+            make.leading.equalTo(characterNameLabel.snp.leading)
+            make.trailing.equalTo(characterNameLabel.snp.trailing)
+            make.top.equalTo(characterLocationLabel.snp.bottom).offset(8)
             make.bottom.equalTo(backGroundView.snp.bottom).offset(-16)
         }
 

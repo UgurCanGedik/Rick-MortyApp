@@ -108,7 +108,8 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         cell.setCell(charaterName: viewModel.characterData.value[indexPath.row].name ?? "",
                      characterId: viewModel.characterData.value[indexPath.row].id ?? "",
                      characterImageURL: viewModel.characterData.value[indexPath.row].image ?? "",
-                     characterLocation: viewModel.characterData.value[indexPath.row].location?["name"] ?? "")
+                     characterLocation: viewModel.characterData.value[indexPath.row].location?.name ?? "",
+                     characterGender: viewModel.characterData.value[indexPath.row].gender ?? "")
         if indexPath.row == viewModel.getRowCount() - 1 {
             viewModel.getData(isNextPage: true)
         }
@@ -130,6 +131,6 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         tableView.separatorStyle = .none
         tableView.contentInset = UIEdgeInsets(top: 10, left: 0, bottom: 50, right: 0)
         tableView.showsVerticalScrollIndicator = false
-        tableView.estimatedRowHeight = 250
+        tableView.estimatedRowHeight = 300
     }
 }

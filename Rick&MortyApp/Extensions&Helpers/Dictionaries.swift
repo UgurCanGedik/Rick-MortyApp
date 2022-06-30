@@ -9,4 +9,5 @@ import Foundation
 
 let TagToFilter: [Int: Filters] = [0: .allCharacters,
                                    1: .ricks,
-                                   2: .mortys]
+                                   2: .mortys,
+                                   3: .summer]

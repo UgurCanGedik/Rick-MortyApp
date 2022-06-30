@@ -16,10 +16,14 @@ class FilterViewController: UIViewController {
     private lazy var seperatorView: UIView = UIView()
     private lazy var firstFilterButton: UIButton = UIButton()
     private lazy var secondFilterButton: UIButton = UIButton()
+    private lazy var thirdFilterButton: UIButton = UIButton()
     private lazy var firstFilterLabel: UILabel = UILabel()
     private lazy var secondFilterLabel: UILabel = UILabel()
+    private lazy var thirdFilterLabel: UILabel = UILabel()
     private lazy var firstFilterImageView: UIImageView = UIImageView()
     private lazy var secondFilterImageView: UIImageView = UIImageView()
+    private lazy var thirdFilterImageView: UIImageView = UIImageView()
+    
 
     let viewModel = MainViewModel.shared
 
@@ -132,17 +136,26 @@ class FilterViewController: UIViewController {
 
     private func setSelectedImage(Filter: Filters) {
 
+        unSelectedImage()
         switch Filter {
         case .ricks:
             firstFilterImageView.image = UIImage(named: "filterSelectedIcon")
-            secondFilterImageView.image = UIImage(named: "filterUnselectedIcon")
+//            secondFilterImageView.image = UIImage(named: "filterUnselectedIcon")
         case .mortys:
-            firstFilterImageView.image = UIImage(named: "filterUnselectedIcon")
+//            firstFilterImageView.image = UIImage(named: "filterUnselectedIcon")
             secondFilterImageView.image = UIImage(named: "filterSelectedIcon")
+        case .summer:
+            firstFilterImageView.image = UIImage(named: "filterUnselectedIcon")
+            secondFilterImageView.image = UIImage(named: "filterUnselectedIcon")
         case .allCharacters:
             firstFilterImageView.image = UIImage(named: "filterUnselectedIcon")
             secondFilterImageView.image = UIImage(named: "filterUnselectedIcon")
         }
+    }
+    
+    private func unSelectedImage() {
+        firstFilterImageView.image = UIImage(named: "filterUnselectedIcon")
+        secondFilterImageView.image = UIImage(named: "filterUnselectedIcon")
     }
 
     private func setSelectedCharacter(Filter: Filters) {

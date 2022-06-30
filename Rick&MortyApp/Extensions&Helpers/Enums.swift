@@ -11,6 +11,7 @@ enum Filters: CustomStringConvertible {
 
     case ricks
     case mortys
+    case summer
     case allCharacters
 
     var description : String {
@@ -19,6 +20,8 @@ enum Filters: CustomStringConvertible {
             return "rick"
         case .mortys:
             return "morty"
+        case .summer:
+            return "summer"
         case .allCharacters:
             return ""
         }
